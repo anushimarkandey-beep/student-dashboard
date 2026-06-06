@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Student Dashboard</title>
+  <link rel="stylesheet" href="style1.css"/>
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>📚 Smart Student Dashboard</h1>
+
+    <!-- Dark Mode -->
+    <button onclick="toggleDark()" class="dark-btn">🌙 Toggle Dark Mode</button>
+
+    <!-- TO-DO -->
+    <div class="card">
+      <h2>✅ To-Do List</h2>
+      <input id="taskInput" placeholder="Enter task..."/>
+      <button onclick="addTask()">Add</button>
+      <ul id="taskList"></ul>
+    </div>
+
+    <!-- Notes -->
+    <div class="card">
+      <h2>📝 Notes</h2>
+      <textarea id="noteInput" placeholder="Write notes..."></textarea>
+      <button onclick="saveNote()">Save Note</button>
+      <p id="savedNote"></p>
+    </div>
+
+    <!-- Marks -->
+    <div class="card">
+      <h2>📊 Marks Tracker</h2>
+      <input id="marksInput" type="number" placeholder="Enter marks"/>
+      <button onclick="addMarks()">Add Marks</button>
+      <p id="marksList"></p>
+      <h3 id="average"></h3>
+    </div>
+
+  </div>
+
+  <script src="script1.js"></script>
+</body>
+</html>
